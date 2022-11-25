@@ -13,9 +13,10 @@ import os
 from pathlib import Path
 import pymysql
 
+# It holds all the configuration values that the web app needs to work.
+
 from django.core.checks import templates
 import django.core.mail
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 

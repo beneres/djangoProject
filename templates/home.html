@@ -1,7 +1,21 @@
 <!-- templates/home.html -->
 {#% extends 'base.html' %#}
+<!-- This page is responsible to create the design of home interface -->
 
-{% block title %}Home{% endblock %}
+<style>
+	body{
+        padding: 2px;
+	    background: #95b68f;
+        text-align: center;
+        margin: 150px 0 0;
+        font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+        font-size: large;
+		}
+    p{
+        font-size: medium;}
+    </style>
+
+{% block title %} {% endblock %}
 
 {% block content %}
 {% if user.is_authenticated %}

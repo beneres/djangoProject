@@ -3,6 +3,8 @@ import datetime
 from django.db import models
 from django.utils import timezone
 
+# This page is responsible to create the model for questions and choices format
+
 # Question and choices queries.
 class Question(models.Model):
     question_text = models.CharField(max_length=200)

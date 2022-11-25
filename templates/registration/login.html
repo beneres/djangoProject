@@ -1,8 +1,22 @@
 
-{% block title %}Login{% endblock %}
+{% block title %}{% endblock %}
+<!-- This page is responsible to create the design of login interface -->
+
+<style>
+	body{
+        padding: 2px;
+	    background: #95b68f;
+        text-align: center;
+        margin: 150px 0 0;
+        font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+        font-size: large;
+		}
+    p{
+        font-size: medium;}
+    </style>
 
 {% block content %}
-<h2>Log In</h2>
+<h2>Log in</h2>
 <form method="post">
   {% csrf_token %}
   {{ form.as_p }}

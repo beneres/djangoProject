@@ -1,7 +1,17 @@
 {% load static %}
-
-<link rel="stylesheet" href="{% static 'polls/style.css' %}">
-
+<!-- This page is responsible to create the design of results interface -->
+<style>
+	body{
+        padding: 2px;
+	    background: #95b68f;
+        text-align: center;
+        margin: 150px 0 0;
+        font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+        font-size: large;
+		}
+    p{
+        font-size: medium;
+    </style>
 <h1>{{ question.question_text }}</h1>
 
 <ul>

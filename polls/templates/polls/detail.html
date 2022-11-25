@@ -1,7 +1,18 @@
 {% load static %}
+<!-- This page is responsible to create the design of questions interface -->
 
-<link rel="stylesheet" href="{% static 'polls/style.css' %}">
-
+<style>
+	body{
+        padding: 2px;
+	    background: #95b68f;
+        text-align: center;
+        margin: 150px 0 0;
+        font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+        font-size: large;
+		}
+    p{
+        font-size: medium;}
+    </style>
 <form action="{% url 'polls:vote' question.id %}" method="post">
 {% csrf_token %}
 <fieldset>
