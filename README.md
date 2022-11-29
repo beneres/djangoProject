@@ -1,7 +1,5 @@
 # djangoProject
 
 
-Django é um framework muito atrativo para iniciantes em programação por seu jeito simples, e sua plataforma gratuita, serve para facilitar e
-otimizar o tempo de desenvolvimento de projetos web por meio da linguagem de programação Python.
-é uma ferramenta extremamente completa, contendo soluções para problemas que vão desde os mais simples aos mais complexos
-
+Django is a very attractive framework for beginners in programming due to its simple way, and its free platform, serves to facilitate and optimize the development time of web projects through the Python programming language. is an extremely complete tool, containing solutions to problems ranging from the simplest to the most complex.
+In this specific project the idea was to create a website with login and password, use the database to store polls, and html and css for finishing and design
