@@ -14,12 +14,25 @@
     p{
         font-size: medium;}
     </style>
+
+   {% if user.is_authenticated %}
+  Hi {{ user.username }}!
+       <p></p>
+     <p><a class ="btn btn-secondary btn-sm mb-3"  href="{% url 'logout' %}">Log Out</a></p>
+<!--Display polls questions, if user is logged in.-->
 {% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
-    </ul>
+      {% for question in latest_question_list %}
+      <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
 {% else %}
+    <!--If user is logged in, the polls aren't visible.-->
     <p>No polls are available.</p>
+{% endif %}
+{% else %}
+       <h1>To see the polls</h1>
+       <p>Please log in</p>
+           <button type="button"  class="d-flex justify-content-center mt-3 login_container">
+    <a href="{% url 'login' %}" style="color:white"> Log in </a>
+       </button>
+
 {% endif %}
