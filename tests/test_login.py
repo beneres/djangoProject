@@ -1,5 +1,5 @@
 import unittest
-from tests import test_views  # import the test_views module containing the tests
+from tests import test_views  # to import the test_views module containing the tests.
 
 
 # define a test suite
@@ -16,4 +16,3 @@ if __name__ == '__main__':
     runner = unittest.TextTestRunner()
     runner.run(suite())
 
-# run python test_login.py on terminal to perform a testing
